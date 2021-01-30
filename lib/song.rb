@@ -53,7 +53,7 @@ class Song
       song_name = song_info[1].split(".")
       song_name = song_info[1][0]
       
-      
+      music = Song.new(song_name, artist_name)
     
   end
   
