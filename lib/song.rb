@@ -51,7 +51,7 @@ class Song
       song_info = file.split(" -")
       artist_name = song_info[0]
       song_name = song_info[]
-      
+      song_name.split()
     
   end
   
