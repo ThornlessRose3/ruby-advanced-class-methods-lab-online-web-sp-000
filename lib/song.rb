@@ -36,7 +36,7 @@ class Song
   
  def self.find_or_create_by_name(name)
     if self.find_by_name(name) == name
-      self.find_by_name(name)
+      self
     else
       self.create_by_name(name)
     end
@@ -51,7 +51,7 @@ class Song
      artist_name = song_info[0]
      song_name = song_info[1].chomp(".mp3")
       
-      music = Song.create(song_name,  artist_name)
+      music = Song.new(song_name,  artist_name)
       music
     end
     
