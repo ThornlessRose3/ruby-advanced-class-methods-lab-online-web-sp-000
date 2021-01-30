@@ -9,6 +9,7 @@ class Song
   end
   
   def initialize
+    @name = (name)
     self.save
   end
 
@@ -16,8 +17,8 @@ class Song
     self.class.all << self
   end
 
-  def self.create
-    self.new
+  def self.create(nname = nil)
+    self.new(name)
   end
 
   def self.new_by_name(name)
