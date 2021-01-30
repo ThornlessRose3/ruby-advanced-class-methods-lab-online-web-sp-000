@@ -8,9 +8,8 @@ class Song
     @@all
   end
   
-  def initialize(name, artist_name*)
+  def initialize(name)
     @name = (name)
-    @artist_name = artist_name
     self.save
   end
 
