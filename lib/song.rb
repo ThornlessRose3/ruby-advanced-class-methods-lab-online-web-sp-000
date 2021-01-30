@@ -51,7 +51,7 @@ class Song
      artist_name = song_info[0]
      song_name = song_info[1].chomp(".mp3")
       
-      music = Song.new(song_name,  artist_name)
+      music = Song.create(song_name,  artist_name)
       music
     end
     
