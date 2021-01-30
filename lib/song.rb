@@ -48,8 +48,8 @@ class Song
   
   def self.new_from_filename(filename)
      song_info = filename.split("-")
-    # artist_name = song_info[0]
-    # song_name = song_info[1].chomp(".mp3")
+     artist_name = song_info[0]
+     song_name = song_info[1].chomp(".mp3")
       
     #  music = Song.new(song_name,  artist_name)
       # music
