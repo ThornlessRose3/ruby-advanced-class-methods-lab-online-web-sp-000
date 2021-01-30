@@ -48,10 +48,12 @@ class Song
   
   def self.new_from_filename(filename)
     info = filename.collect do |file|
-      song_info = file.split(" -")
+      song_info = file.split(" - ")
       artist_name = song_info[0]
-      song_name = song_info[]
-      song_name.split()
+      song_name = song_info[1].split(".")
+      song_name = song_info[1][0]
+      
+      
     
   end
   
