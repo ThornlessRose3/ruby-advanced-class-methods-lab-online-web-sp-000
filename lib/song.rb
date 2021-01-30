@@ -47,7 +47,7 @@ class Song
   end
   
   def self.new_from_filename(filename)
-    info = filename.collect do
+    info = filename.collect do |filename
       song_name
     
   end
