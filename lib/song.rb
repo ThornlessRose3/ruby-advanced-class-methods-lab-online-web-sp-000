@@ -35,7 +35,7 @@ class Song
   
  def self.find_or_create_by_name(name)
     if self.all.include?(name)
-      puts "This is working"
+      self.find_by_name(name)
     else
       self.create_by_name(name)
     end
